@@ -1,15 +1,20 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 nav {
-  display: block;
   position: absolute;
   top: 0;
-  height: 50px;
-  background-color: green;
+  background: green;
+  height: 30px;
   width: 100%;
+  display: block;
 }
 
 li {
   display: inline;
-  list-style-type: none;
+  font-size: 18px;
   margin-right: 25px;
 }
 
@@ -20,7 +25,6 @@ a:link {
 
 a:hover {
   color: orange;
-  text-decoration: none;
 }
 
 li > ul {
@@ -30,12 +34,10 @@ li > ul {
 li:hover ul {
   display: block;
   position: absolute;
-  left: 160px;
+  left: 150px;
   background-color: green;
-  margin: 10px;
 }
 
-li:hover ul li a:link {
+li:hover ul li a {
   display: block;
-  margin-left: -30px;
 }
